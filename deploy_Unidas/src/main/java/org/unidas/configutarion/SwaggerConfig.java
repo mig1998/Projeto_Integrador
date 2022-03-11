@@ -28,7 +28,7 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 						.name("generation.org.br")
 						.url("http://springdoc.org"))
 					.contact(new Contact()
-						.name("Diego Martins")
+						.name("Miguel Araujo")
 						.url("https://github.com/mig1998")
 						.email("miguelaras@hotmail.com")))
 					.externalDocs(new ExternalDocumentation()
