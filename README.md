@@ -14,7 +14,8 @@ https://unidasheroku.herokuapp.com/
 
 <h2>Desenvolvedores:</h2>
 
-<img align="left" src="https://avatars.githubusercontent.com/u/97360327?v=4" width=115><sub></sub>
+<img align="left" src="https://avatars.githubusercontent.com/u/97360327?v=4" width=115>
+<img align="left" src="https://avatars.githubusercontent.com/u/98328512?v=4" width=115>
 <img align="left" src="https://avatars.githubusercontent.com/u/98328391?v=4" width=115>
 <img align="left" src="https://avatars.githubusercontent.com/u/51775914?v=4" width=115>
 <img align="left" src="" width=115>
@@ -25,11 +26,12 @@ https://unidasheroku.herokuapp.com/
 <br><br>
 
 
-<a href="https://github.com/JaquelaneOBessa">Jaquelane Oliveira</a> &nbsp;&nbsp;
-<a href="https://github.com/EuDiegow">Diego Martins</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/mig1998">Miguel Araujo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/JaquelaneOBessa">Jaquelane Oliveira</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/luanaassisi">Luana Assis</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/EuDiegow">Diego Martins</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/mig1998">Miguel Araujo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Bruno Diniz
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/kogmau">William Marques</a>
 
 
