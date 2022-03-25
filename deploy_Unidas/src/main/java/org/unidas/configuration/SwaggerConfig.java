@@ -1,4 +1,4 @@
-package org.unidas.configutarion;
+package org.unidas.configuration;
 
 import org.springdoc.core.customizers.OpenApiCustomiser;
 import org.springframework.context.annotation.Bean;
@@ -25,11 +25,11 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 						.description("Projeto Mais Unidas - Generation Brasil")
 						.version("v1.0.0")
 					.license(new License()
-						.name("generation.org.br")
-						.url("http://springdoc.org"))
+						.name("org.unidas")
+						.url("https://github.com/mig1998/Projeto_Integrador"))
 					.contact(new Contact()
 						.name("Miguel Araujo")
-						.url("https://github.com/mig1998")
+						.url("https://mig1998.github.io/")
 						.email("miguelaras@hotmail.com")))
 					.externalDocs(new ExternalDocumentation()
 						.description("Github")
