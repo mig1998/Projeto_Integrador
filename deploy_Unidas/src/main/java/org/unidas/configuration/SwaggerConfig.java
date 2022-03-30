@@ -48,11 +48,11 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 
 					apiResponses.addApiResponse("200", createApiResponse("Sucesso!"));
 					apiResponses.addApiResponse("201", createApiResponse("Objeto Persistido!"));
-					apiResponses.addApiResponse("204", createApiResponse("Objeto Exclu√≠do!"));
-					apiResponses.addApiResponse("400", createApiResponse("Erro na Requisi√ß√£o!"));
-					apiResponses.addApiResponse("401", createApiResponse("Acesso N√£o Autorizado!"));
-					apiResponses.addApiResponse("404", createApiResponse("Objeto N√£o Encontrado!"));
-					apiResponses.addApiResponse("500", createApiResponse("Erro na Aplica√ß√£o!"));
+					apiResponses.addApiResponse("204", createApiResponse("Objeto Excluido!"));
+					apiResponses.addApiResponse("400", createApiResponse("Erro na RequisiÁ„o!"));
+					apiResponses.addApiResponse("401", createApiResponse("Acesso N„o Autorizado!"));
+					apiResponses.addApiResponse("404", createApiResponse("Objeto N„o Encontrado!"));
+					apiResponses.addApiResponse("500", createApiResponse("Erro na ApliÁ„o!"));
 
 				}));
 			};

@@ -5,8 +5,10 @@ import java.util.Optional;
 
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 import org.unidas.model.Usuario;
 import org.unidas.model.UsuarioLogin;
 import org.unidas.repository.UsuarioRepository;
@@ -34,7 +36,7 @@ public class UsuarioService {
 		if(usuario.isPresent()) {
 			if(compararSenhas(usuarioLogin.get().getSenha(), usuario.get().getSenha())) {
 			usuarioLogin.get().setId(usuario.get().getId());
-			usuarioLogin.get().setNome_completo(usuario.get().getNome_completo());
+			usuarioLogin.get().setNome(usuario.get().getNome());
 			usuarioLogin.get().setToken(gerarBasicToken(usuarioLogin.get().getUsuario(), usuarioLogin.get().getSenha()));
 			usuarioLogin.get().setSenha(usuario.get().getSenha());
 			
@@ -46,7 +48,22 @@ public class UsuarioService {
 		
 	}
 	
-	
+	public Optional<Usuario> atualizarUsuario(Usuario usuario) {
+
+		if (usuarioRepository.findById(usuario.getId()).isPresent()) {
+			Optional<Usuario> buscaUsuario = usuarioRepository.findByUsuario(usuario.getUsuario());
+
+			if ((buscaUsuario.isPresent()) && (buscaUsuario.get().getId() != usuario.getId()))
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Usuário já existe!", null);
+
+			usuario.setSenha(criptografarSenha(usuario.getSenha()));
+
+			return Optional.ofNullable(usuarioRepository.save(usuario));
+
+		}
+		return Optional.empty();
+
+	}
 	
 	private String criptografarSenha(String senha) {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();

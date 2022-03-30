@@ -9,6 +9,6 @@ import org.unidas.model.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-	public List<Usuario> findAllByUsuarioContainingIgnoreCase(String usuario);
+	public List<Usuario> findAllByNomeContainingIgnoreCase(String nome);
 	public Optional<Usuario> findByUsuario(String usuario);
 }
