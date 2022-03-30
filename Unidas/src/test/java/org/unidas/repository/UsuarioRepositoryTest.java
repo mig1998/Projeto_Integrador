@@ -29,11 +29,11 @@ import org.unidas.model.Usuario;
 	 
 	 @BeforeAll
 		void start() {
-			usuarioRepository.save(new Usuario(0L, "Ramon Daniel Santos","ramonzitosantos@clovis.com","1223456789"));
+			usuarioRepository.save(new Usuario(0L, "Ramon Daniel Santos","ramonzitosantos@clovis.com","1223456789","img"));
 	
-			usuarioRepository.save(new Usuario(0L, "Robson Carmo Santos","robsonbruxinhosantos@carmo.com","mago1234"));
+			usuarioRepository.save(new Usuario(0L, "Robson Carmo Santos","robsonbruxinhosantos@carmo.com","mago1234","img"));
 		
-			usuarioRepository.save(new Usuario(0L, "Paolo Bracho Santos","ataldausurpadorasantos@yahoo.com","carlosdaniel"));
+			usuarioRepository.save(new Usuario(0L, "Paolo Bracho Santos","ataldausurpadorasantos@yahoo.com","carlosdaniel","img"));
 				
 	 }
 	 
@@ -51,11 +51,11 @@ import org.unidas.model.Usuario;
 	 @DisplayName("Retorna 3 usuarios")
 
 	public void deveRetornarTresUsuarios() {
-		 List<Usuario> listaDeUsuarios = usuarioRepository.findAllByUsuarioContainingIgnoreCase("santos");
+		 List<Usuario> listaDeUsuarios = usuarioRepository.findAllByNomeContainingIgnoreCase("Santos");
 		 assertEquals(3, listaDeUsuarios.size());
-		 assertTrue(listaDeUsuarios.get(0).getUsuario().equals("ramonzitosantos@clovis.com"));
-		 assertTrue(listaDeUsuarios.get(1).getUsuario().equals("robsonbruxinhosantos@carmo.com"));
-		 assertTrue(listaDeUsuarios.get(2).getUsuario().equals("ataldausurpadorasantos@yahoo.com"));
+		 assertTrue(listaDeUsuarios.get(0).getNome().equals("Ramon Daniel Santos"));
+		 assertTrue(listaDeUsuarios.get(1).getNome().equals("Robson Carmo Santos"));
+		 assertTrue(listaDeUsuarios.get(2).getNome().equals("Paolo Bracho Santos"));
 	 
 	 }
 	 
