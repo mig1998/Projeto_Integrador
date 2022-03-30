@@ -52,7 +52,7 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 					apiResponses.addApiResponse("400", createApiResponse("Erro na Requisição!"));
 					apiResponses.addApiResponse("401", createApiResponse("Acesso Não Autorizado!"));
 					apiResponses.addApiResponse("404", createApiResponse("Objeto Não Encontrado!"));
-					apiResponses.addApiResponse("500", createApiResponse("Erro na Aplição!"));
+					apiResponses.addApiResponse("500", createApiResponse("Erro na Aplicação!"));
 
 				}));
 			};
