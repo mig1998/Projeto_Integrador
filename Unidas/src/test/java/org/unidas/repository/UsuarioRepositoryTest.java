@@ -29,11 +29,11 @@ import org.unidas.model.Usuario;
 	 
 	 @BeforeAll
 		void start() {
-			usuarioRepository.save(new Usuario(0L, "Ramon Daniel Santos","ramonzitosantos@clovis.com","1223456789","img"));
+			usuarioRepository.save(new Usuario(0L, "Ramon Daniel Santos","ramonzitosantos@clovis.com","1223456789","img","",""));
 	
-			usuarioRepository.save(new Usuario(0L, "Robson Carmo Santos","robsonbruxinhosantos@carmo.com","mago1234","img"));
+			usuarioRepository.save(new Usuario(0L, "Robson Carmo Santos","robsonbruxinhosantos@carmo.com","mago1234","img","",""));
 		
-			usuarioRepository.save(new Usuario(0L, "Paolo Bracho Santos","ataldausurpadorasantos@yahoo.com","carlosdaniel","img"));
+			usuarioRepository.save(new Usuario(0L, "Paolo Bracho Santos","ataldausurpadorasantos@yahoo.com","carlosdaniel","img","",""));
 				
 	 }
 	 

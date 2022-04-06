@@ -36,7 +36,7 @@ public class UsuarioControllerTest {
 	@Order(1)
 	public void deveCadastrarUmUsuario() {
 		HttpEntity<Usuario> requisicao = new HttpEntity<Usuario>(
-				new Usuario(0L, "Ze Mario", "zemario@ovo.com", "ovofrito123","img"));
+				new Usuario(0L, "Ze Mario", "zemario@ovo.com", "ovofrito123","","img",""));
 
 		ResponseEntity<Usuario> resposta = testRestTemplate.exchange("/usuarios/cadastrar", HttpMethod.POST, requisicao,
 				Usuario.class);
@@ -50,10 +50,10 @@ public class UsuarioControllerTest {
 	@Order(2)
 	private void deveAtualizarUmUsuario() {
 		Optional<Usuario> usuarioCreate = usuarioService.cadastrarUsuario(new Usuario(0L, "TinkWink",
-				"tinkwink@telletubies.com.br", "bolsavermelha","img"));
+				"tinkwink@telletubies.com.br", "bolsavermelha","img","",""));
 
 		Usuario usuarioUpdate = new Usuario(usuarioCreate.get().getId(), "TinkWink da Silva",
-				"tinkwink@telletubies.com.br", "bolsavermelha","img");
+				"tinkwink@telletubies.com.br", "bolsavermelha","img","","");
 
 		HttpEntity<Usuario> requisicaoAtualizacao = new HttpEntity<Usuario>(usuarioUpdate);
 

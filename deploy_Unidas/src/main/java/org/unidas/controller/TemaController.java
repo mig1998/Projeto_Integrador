@@ -20,7 +20,7 @@ import org.unidas.repository.TemaRepository;
 @RestController
 
 @RequestMapping(value="/temas")
-@CrossOrigin(origins="",allowedHeaders ="")
+@CrossOrigin(origins="*",allowedHeaders ="*")
 
 
 

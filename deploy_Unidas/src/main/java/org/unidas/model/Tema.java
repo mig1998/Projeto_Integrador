@@ -32,7 +32,7 @@ public class Tema {
 	@Size(min = 1, max = 500,message="a descrição deve conter entre 1 e 500 caracteres")
 	private String descricao;
 
-	@OneToMany(mappedBy = "tema",cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "tema",cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;
 	
